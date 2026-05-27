@@ -1,117 +1,115 @@
-# Marketing Performance Insights Dashboard
+---
 
-## Overview
+## Key Product Decisions
 
-This project is a product scoping exercise for a marketing technology company.
+Several important product and scope decisions were made during this project.
 
-The goal is to design an internal tool that helps marketing teams quickly understand:
+### Why Internal Analysts Were Chosen as Primary Users
 
-- How marketing is performing across channels
-- Which channels are performing best
-- Where teams should focus next
+Internal marketing analysts were selected as the primary users because they are directly affected by the current workflow inefficiencies. They spend significant time manually collecting data, preparing reports, and analyzing campaign performance across multiple platforms.
 
-Currently, analysts manually collect data from multiple tools, which is slow, inconsistent, and difficult to scale.
-
-This project proposes a centralized dashboard solution to simplify and standardize marketing performance analysis.
+Focusing on analysts allowed the product scope to prioritize operational efficiency and reporting consistency.
 
 ---
 
-## Primary Users
+### Why a Centralized Dashboard Was Selected
 
-- Internal Marketing Analysts
-- Account Managers
+A centralized dashboard approach was chosen because the core business problem involves fragmented marketing data across multiple platforms.
 
-Secondary users:
-- Clients (future scope)
-
----
-
-## Problem Statement
-
-Marketing analysts currently spend significant time manually collecting campaign data from different platforms such as Google Ads, Meta Ads, LinkedIn Ads, and Google Analytics.
-
-This process:
-- takes too much time,
-- depends heavily on experienced team members,
-- creates inconsistent reports,
-- and delays decision-making.
-
-The company needs a centralized internal tool to make reporting faster, more reliable, and more consistent.
+Combining campaign insights into a single interface helps:
+- reduce manual effort,
+- improve reporting speed,
+- and standardize analysis workflows.
 
 ---
 
-## Product Goal
+### Why Advanced AI Features Were Excluded
 
-The goal of this product is to:
+Advanced AI recommendation systems and predictive analytics were intentionally excluded from Version 1.
 
-- centralize marketing performance metrics,
-- reduce manual reporting effort,
-- provide quick performance insights,
-- standardize reporting,
-- and help teams identify high-performing marketing channels.
+Although these features may provide value in future releases, they would significantly increase development complexity and implementation time.
+
+The focus of Version 1 is solving the core operational reporting problem with a lightweight and practical solution.
 
 ---
 
-## Proposed Solution
+### Why Existing Workflows Were Preserved
 
-The proposed solution is a centralized dashboard that integrates data from multiple marketing platforms and presents unified campaign insights in one place.
+The assessment specified that the company would not change its current tools or workflows.
 
-The dashboard will:
-- pull data from marketing APIs,
-- display cross-channel performance,
-- generate quick insights,
-- and allow report exports.
+Because of this constraint, the proposed product was designed to integrate around existing marketing platforms rather than replace them.
+
+This influenced both the architecture and feature scope decisions.
 
 ---
 
-## Key Features in V1
+## Trade-Offs and Scope Decisions
 
-1. Unified Marketing Dashboard
-2. Cross-Channel Comparison
-3. Automated Insight Summary
-4. Date Range Filters
-5. Export Reports
+During the scoping process, several trade-offs were considered.
 
----
+The product intentionally prioritizes:
+- simplicity,
+- usability,
+- maintainability,
+- and faster delivery.
 
-## Out of Scope for V1
+Instead of building a large enterprise platform, the focus was on creating a focused internal tool that delivers immediate operational value.
 
-- AI prediction models
-- Real-time analytics streaming
-- Full client self-service portal
-- Campaign editing
-- Advanced customization
+Features such as:
+- real-time streaming,
+- advanced customization,
+- campaign editing,
+- and client self-service portals
 
-These features are intentionally excluded to keep the first version focused, simple, and useful.
-
----
-
-## Tech Stack Suggestion
-
-Frontend:
-- React
-
-Backend:
-- Python FastAPI
-
-Database:
-- BigQuery / PostgreSQL
-
-Hosting:
-- Google Cloud Platform
+were postponed to avoid unnecessary complexity during the initial version.
 
 ---
 
-## Future Improvements
+## What I Would Revisit With More Time
 
-- AI-generated recommendations
-- Predictive analytics
-- Slack/Email alerts
+If given additional time, several improvements and enhancements could be explored.
+
+### Product Improvements
+
+- AI-generated performance recommendations
+- Predictive marketing analytics
+- Automated anomaly detection
 - Natural language querying
-- Client dashboards
+- Role-based dashboards
+- Client self-service access
 
 ---
 
-## Conclusion
+### Technical Improvements
 
-This product focuses on solving a real operational problem with a practical and scalable approach. The emphasis is on usability, speed, consistency, and reduced manual effort.
+- Real-time data synchronization
+- Advanced monitoring and alerting
+- Improved API retry mechanisms
+- Scalable data pipelines
+- Enhanced security and authentication
+- Dashboard performance optimization
+
+---
+
+### User Experience Improvements
+
+- Interactive visualizations
+- Personalized reporting views
+- Custom dashboard widgets
+- Mobile responsiveness
+- Collaboration and sharing features
+
+---
+
+## Final Reflection
+
+This project focused on balancing practical usability with realistic product scope management.
+
+The primary objective was not to design the most feature-rich platform possible, but to create a focused solution that solves a real operational problem effectively.
+
+Throughout the project, emphasis was placed on:
+- user-centered thinking,
+- workflow efficiency,
+- maintainability,
+- scalability,
+- and clear product prioritization.
